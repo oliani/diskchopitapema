@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Disk Chopp Itapema | Home</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="css/fontAwesome.css">
+        <link rel="stylesheet" href="css/hero-slider.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/datepicker.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+
+        <!--Popup Script-->
+        <script>
+            var checkState= localStorage.getItem('checkState');
+            if(checkState=="true"){ 
+                function openDialog(okno) {
+                document.getElementById(okno).className+= "hidden";
+                }
+                }else{
+                function openDialog(okno) {
+                document.getElementById(okno).className+= " show";
+                }
+            };
+            function closeDialog(okno) {
+                document.getElementById(okno).className = "dialog-cover";
+            }
+        </script>
+        <style>
+            @media screen and (max-width: 770px) {
+                .dialog {
+                    position: absolute;
+                    width: 100%;
+                    left: 0;
+                    right: 0 !important;
+                    margin: 0;
+                    top: 0;
+                    padding: 10px;
+                    border-radius: 0;
+                    padding: 50px 0px;
+                }
+            }
+            .dialog-background {
+                width: 100%;
+                height: 100%;
+                background: rgba(0,0,0,.85);
+                position: fixed;
+                display: none;
+                z-index: 99;
+            }
+            .dialog {
+                padding: 40px;
+                width: 50%;
+                position: fixed; left: 45%; top: 40%;
+                height: auto;
+                margin-top: -100px;
+                margin-left: -25%;
+                background: #fff;
+                display: none;
+                z-index: 100;
+                text-align: center;
+                border-radius: 3px;
+            }
+            .cButton {border: none;color: #fff;padding: 10px 30px;cursor:pointer;}
+            .hidden {display: none !important;}
+            .show .dialog, .show .dialog-background {display: block;}
+            .cButtonConsent {border: 1px solid #1ba38c;background: none;color:#1ba38c;}
+            .cButtonConsent:hover{background: #1ba38c;color:#fff;}
+            .cButtonNoConsent {border: 1px solid #ca5a5b;background: none;color: #ca5a5b;}
+            .cButtonNoConsent:hover{background:#ca5a5b;color:#fff;}
+            .cButtonNoConsent, .cButtonConsent {transition: .1s linear all;}
+            .cButtonThird {background:none;color: #a2a2a2 !important;margin-top: 10px;font-size: 0.9rem;}
+        </style>
+        <div id="okno" class="dialog-cover show">
+            <div class="dialog-background"></div>
+            <div class="dialog">
+                <h1>Você tem mais de 18 anos?</h1>
+                <br>
+                <div align="center">
+                    <button class="cButton cButtonConsent"><i class="fa fa-beer"></i> Sim</button>
+                    <button class="cButton cButtonNoConsent" onclick="location.href='https://google.com';"> <i class="fa fa-thumbs-down"></i> Não</button>
+                </div>
+            </div>
+        </div>
+        <script>
+            openDialog("okno");
+            document.querySelector('.cButtonConsent').addEventListener("click", function(){
+              localStorage.setItem('checkState','true');
+              document.querySelector('#okno').remove();
+            });
+        </script>
+        <!--End of Script-->
+        
+    </head>
+
+<body>
+
+    <section class="banner" id="top">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-8">
+                    <div class="left-banner-content">
+                        <div class="text-content">
+                            <h6>Disk Chopp Itapema</h6>
+                            <div class="line-dec"></div>
+                            <h1>O melhor Chopp <br>da Região!</h1>
+                            <div class="white-border-button">
+                                <a href="#" class="scroll-link" data-id="best-offer-section">Avançar</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="right-banner-content">
+                        <div class="logo"><a href="index.html"><img src="img/logo.png" alt=""></a></div>
+                        <h2>Disk Chopp <br>Itapema</h2>
+                        <p><i class="fa fa-whatsapp"></i> 47 99601-0660 / <i class="fa fa-whatsapp"></i> 47 99238-8227 </p>
+                        <div class="line-dec"></div>
+                        <ul class="social-icons">
+                            
+                            <li><a href="https://www.facebook.com/diskchoppitapema" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://www.instagram.com/diskchoppitapema" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/diskchoppitapema" target="_blank"><i class="fa fa-send"></i></a></li>
+                            
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="best-offer" id=best-offer-section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="best-offer-left-content">
+                        <!--
+                        <div class="icon"><img src="img/best-offer-icon.png" alt=""></div>
+                          <h4>Best Offer For You</h4>  
+                        -->
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="best-offer-right-content">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-12">
+                                <h2>Fazemos entregas de <em>barris de chopp</em> e <em>máquinas</em> em <em>Itapema e região</em></h2>
+                                <p>Entregas para restaurantes e estabelecimentos, pousadas, hotéis, festas, residencias, eventos, casamentos, confraternizações e momentos especiais. Entregamos em toda a região de Itapema, Balneário Camboriú, Camboriú, Tijucas, Porto Belo e Bombinhas. Nosso serviços contam com:</p>
+                                <ul>
+                                    <li>+ Entrega e instalação completa sem custos adicionais.</li>
+                                    <li>+ Suporte 24 horas pelo telefone para auxílio ou visita se necessário.</li>
+                                    <li>+ Chopp Artesanal Barracuda, o melhor da região.</li>
+                                    <li>+ Choppeiras de alta qualidade.</li>
+                                </ul>
+                                <div class="pink-button">
+                            </div>
+                        </div>    
+                    </div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <section class="location" id="location">
+        <a href="https://g.page/disk-chopp-itapema?share"><div class="col-md-4"></a>
+            <a href="https://g.page/disk-chopp-itapema?share"></a><div class="contact-right-content"></a>
+                <a href="https://g.page/disk-chopp-itapema?share"><div class="icon"><img src="img/map-marker-icon.png" alt=""></div></a>
+                <h4>Encontre-nos no mapa</h4>
+    </section>
+    <footer class="ftco-footer ftco-section">
+        <div class="container">
+          <div class="row mb-5">
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                <h1 class="ftco-heading-2">Disk Chopp Itapema</h1>
+                
+                <section>
+                <p><span class="fa fa-location-arrow"></span></span> Rua 228, Nº 162 Sala 07 - Meia Praia, Itapema - Santa Catarina</p>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4 ml-md-5">
+                <h2 class="ftco-heading-2">Informações</h2>
+                <p2>Nosso estabelecimento conta com um espaço para apreciação e degustação. Venha nos visitar e conheça o melhor que o chopp da região tem a oferecer.</p2>
+                <ul class="list-unstyled">
+                  <li><a href="#" class="py-2 d-block"></a></li>
+                
+                </ul>
+              </div>
+            </div>
+            <div class="col-md">
+              <div class="ftco-footer-widget mb-4">
+                  <h2 class="ftco-heading-2">Tem dúvidas?</h2>
+                  <div class="block-23 mb-3">
+                    <ul>
+                      <li><span class=""></span><span class="text">Entre em contato com a nossa equipe:</span></li>
+                      <li><a href="mailto:diskchoppitapema@gmail.com "><span class="fa fa-phone"></span><span class="text"> 47 99601-0660 <br /> <span class="fa fa-phone"></span></span> 47 99238-8227 <br><span class="fa fa-mail-forward"></span></span> diskchoppitapema@gmail.com</span></a></li>
+                    </ul>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <p>Disk Chopp Itapema &copy; é uma marca registrada | Developed By Eduardo Luiz Oliani</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+          
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+
+    <script src="js/vendor/bootstrap.min.js"></script>
+    
+    <script src="js/datepicker.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+    $(document).ready(function() 
+	{
+        // navigation click actions 
+        $('.scroll-link').on('click', function(event){
+            event.preventDefault();
+            var sectionID = $(this).attr("data-id");
+            scrollToID('#' + sectionID, 750);
+        });
+        // scroll to top action
+        $('.scroll-top').on('click', function(event) {
+            event.preventDefault();
+            $('html, body').animate({scrollTop:0}, 'slow');         
+        });
+        // mobile nav toggle
+        $('#nav-toggle').on('click', function (event) {
+            event.preventDefault();
+            $('#main-nav').toggleClass("open");
+        });
+    });
+    // scroll function
+    function scrollToID(id, speed){
+        var offSet = 0;
+        var targetOffset = $(id).offset().top - offSet;
+        var mainNav = $('#main-nav');
+        $('html,body').animate({scrollTop:targetOffset}, speed);
+        if (mainNav.hasClass("open")) {
+            mainNav.css("height", "1px").removeClass("in").addClass("collapse");
+            mainNav.removeClass("open");
+        }
+    }
+    if (typeof console === "undefined") {
+        console = {
+            log: function() { }
+        };
+    }
+    </script>
+</body>
+</html>
